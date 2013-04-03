@@ -1,12 +1,9 @@
 package org.ImprovedMC.Chat;
 
 import org.ImprovedMC.MainClass;
-<<<<<<< HEAD
 import org.ImprovedMC.Until.pluginException;
-=======
 import org.ImprovedMC.Lang.LangStr;
 import org.ImprovedMC.Until.Perm;
->>>>>>> UPDATE + ADD LANG & TAB API
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -15,10 +12,7 @@ import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 public class CommandEvent implements Listener{
 
 	private MainClass mClass;
-<<<<<<< HEAD
-	
-=======
->>>>>>> UPDATE + ADD LANG & TAB API
+
 	public CommandEvent(MainClass mClass){
 		this.mClass = mClass;
 	}
@@ -28,27 +22,6 @@ public class CommandEvent implements Listener{
 		String msg = e.getMessage();
 		String[] msga = msg.split(" ");
 		Player p = e.getPlayer();
-<<<<<<< HEAD
-		
-		if(msg.equalsIgnoreCase("//clear")){
-			if (mClass.hasPerm(p, "ChatProvider.Clear.Global")) {
-				Player[] allTargets;
-				int i = (allTargets = mClass.getServer().getOnlinePlayers()).length;
-				for (int j = 0; j < i; j++) {
-					Player targetPlayer = allTargets[j];
-					for (int k = 0; k < 120; k++) {
-						targetPlayer.sendMessage(" ");
-						if (k == 119) {
-							targetPlayer.sendMessage(mClass.getPrefix()
-									+ pluginException.GLOBAL_CHAT_CLEARED.msg
-									+ p.getName());
-						}
-					}
-				}
-			} else {
-				p.sendMessage(mClass.getPrefix() + pluginException.NO_PERMISSIONS_EXCEPTION.msg);
-			}
-=======
 		String argsmsg = "";
 		String[] args = argsmsg.split(" ");
 		for(int i = 1; i < msga.length; i++){
@@ -110,8 +83,7 @@ public class CommandEvent implements Listener{
 			}
 			
 		} else {
-			
->>>>>>> UPDATE + ADD LANG & TAB API
+
 		}
 	}
 	
