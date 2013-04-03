@@ -7,10 +7,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-<<<<<<< HEAD
-=======
 @Deprecated
->>>>>>> UPDATE + ADD LANG & TAB API
 public class Command_Clear implements CommandExecutor {
 
 	private MainClass mClass;
