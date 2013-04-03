@@ -17,6 +17,7 @@ public class TabProviderAPI extends JavaPlugin
   implements Listener
 {
 
+@
 private ArrayList<String> nachrichten = new ArrayList<String>();
 
   public static String shortenString(String nachricht)
@@ -119,25 +120,5 @@ private ArrayList<String> nachrichten = new ArrayList<String>();
         nmsPlayer.playerConnection.sendPacket(new Packet201PlayerInfo(nachricht, true, 9999));
       }
     }
-  }
-
-  @EventHandler
-  public void onJoin(PlayerJoinEvent event)
-  {
-    if (!getConfig().getBoolean("UseSuperTab"))
-    {
-      return;
-    }
-
-    ArrayList<String> sl = (ArrayList<String>) getConfig().getStringList("TabConfig");
-
-    this.nachrichten.clear();
-
-    for (String nachricht : sl)
-    {
-      this.nachrichten.add(nachricht);
-    }
-
-    setTab(sl);
   }
 }
