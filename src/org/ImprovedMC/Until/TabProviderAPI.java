@@ -17,7 +17,7 @@ public class TabProviderAPI extends JavaPlugin
   implements Listener
 {
 
-@
+@Deprecated
 private ArrayList<String> nachrichten = new ArrayList<String>();
 
   public static String shortenString(String nachricht)
