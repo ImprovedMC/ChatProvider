@@ -156,4 +156,5 @@ public class Lang {
 	public String getString(String key){
 		return this.langProp.getProperty(key, this.defaultString);
 	}
+	
 }
