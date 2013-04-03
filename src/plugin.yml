@@ -1,0 +1,9 @@
+name: ChatProvider
+version: 1.0.0
+author: ImprovedMC
+authors: [JayZee] 
+
+main: org.ImprovedMC.MainClass
+
+commands:
+  clear:
