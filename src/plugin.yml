@@ -4,6 +4,3 @@ author: ImprovedMC
 authors: [JayZee] 
 
 main: org.ImprovedMC.MainClass
-
-commands:
-  clear:
